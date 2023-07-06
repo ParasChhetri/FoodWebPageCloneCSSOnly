@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/* NAVIGATION BAR */
+.navBar{
+    height: 60px;
+    /* background-color: rgb(128, 255, 0); */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navBar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.nav-logo{
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+}
+
+
+/* ITEMS INSIDE NAVIGATION BAR */
+.listItems ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15px;
+}
+.listItems ul li {
+    margin-left: 15px;
+}
+.listItems ul li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.listItems ul li :hover{
+    background-color: #fff;
+    color: black;
+    border-radius: 45%;
+}
+
+/* HOME SECTION */
+.homeSection::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url("/Images/platter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.88;
+
+}
+
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 50px;
+    color: white;
+    text-align: justify;
+    height: 400px;
+}
+.home p {
+    text-align: justify;
+}
+
+/* HOME SECTION BUTTON */
+.homeSectionOrderNowBtn {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20%;
+}
